@@ -1,0 +1,20 @@
+# Site settings
+title: Curriculum vitae
+description: Um resumo das minhas aventuras
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+url: "https://sconetto.github.io"
+
+# User settings
+username: João Pedro Sconetto
+user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+user_title: Engenheiro de Software
+email: sconetto.joao@gmail.com
+twitter_username: sconetto
+github_username:  sconetto
+gplus_username:  sconetto
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
