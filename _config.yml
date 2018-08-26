@@ -1,20 +1,20 @@
 # Site settings
-title: Curriculum vitae
-description: Um resumo das minhas aventuras
+title: João Pedro Sconetto
+description: Um resumo das minhas aventuras, projetos, experiências, hobbies e algo mais.
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: "https://sconetto.github.io"
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: João Pedro Sconetto
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+username: João Sconetto
 user_title: Engenheiro de Software
+user_description: Engenheiro de software em formação, desenvolvedor ávido, candidato a gerente de projetos/configuração/suporte, amante do DevOps e entusiasta do Software Livre. Piloto competitivo virtual nas horas livres, apreciador de cervejas artesanais e importadas, fã aventureiro da culinária e aficionado pela cultura japonesa. Troco baladas por um bom bowl de lámen ou uma barca de sushi fresco!
+user_description_hobbies: Gosto de aprender sobre novas tecnologias, atualmente estou em lua de mel com ar/vr aplicados com <i>point clouds</i>, <i>ethical hacking</i>, Python <i>machine learning</i> e React Native. Adoro tirar fotografias e tento (falhando muito) ser eu mesmo um fotográfo.
 email: sconetto.joao@gmail.com
 twitter_username: sconetto
-github_username:  sconetto
-gplus_username:  sconetto
+github_username: sconetto
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "sconetto-githubio"
 
 exclude: ['package.json', 'src' , 'node_modules']
