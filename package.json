@@ -9,16 +9,17 @@
   "author": "Nathan Randecker",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^2.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
     "tunnel-agent": "^0.6.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.0"
   }
 }
