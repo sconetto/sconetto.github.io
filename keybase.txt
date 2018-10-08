@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sconetto
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sconetto.github.io
+  * I am sconetto (https://keybase.io/sconetto) on keybase.
+  * I have a public key ASBuWeod473Jc-L-YIHpMCSc7ncHoCtfupJiC2wCAJ87SAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207df3e90465cacad1c6f2c00698c9c4a128768929a14437ef024f6a2ec3a2a8460a",
+      "host": "keybase.io",
+      "kid": "01206e59ea1de3bdc973e2fe6081e930249cee7707a02b5fba92620b6c02009f3b480a",
+      "uid": "ea3a7820e73e96e681cac8b1e016a919",
+      "username": "sconetto"
+    },
+    "merkle_root": {
+      "ctime": 1539037668,
+      "hash": "98f6d5ab5b29f4d4946de063e810401628910d2e4834711c0feef173badedf58f0368cfcde448bc3605dee3d2daa06498c1c4023584dc6fda88b88b37a8e68b0",
+      "hash_meta": "a309b9fab21b38b36f5d3b92fa7fea0240a21f2470d7bb6127ee52241ad042a0",
+      "seqno": 3765208
+    },
+    "service": {
+      "entropy": "vdHRyCeD/RxTvhCk0+oFKYja",
+      "hostname": "sconetto.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.8.0"
+  },
+  "ctime": 1539037675,
+  "expire_in": 504576000,
+  "prev": "56c7227d907e0ad282d6bf06b6dc84cb1c986fed66ff7ae96f853d6712f88ca3",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgblnqHeO9yXPi/mCB6TAknO53B6ArX7qSYgtsAgCfO0gKp3BheWxvYWTESpcCEMQgVscifZB+CtKC1r8GttyEyxyYb+1m/3rpb4U9ZxL4jKPEIKMN/pzgGH4HLbeYj6miBiC858cY+7ZECF0HCwnn9gLnAgHCo3NpZ8RAQA/Kwu2M9Qjl1av4VDbeFu4JbP1a+WZlD3cg64404+At4bsC8RGgr1KnR1jfaxYj4lP9vT+Cbs+ndNPTUGe0C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJmnBvR3gFcEk3SIEW/QEu1Oxfo/NpqyCzIDqS4954Ddo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sconetto
+
+==================================================================
