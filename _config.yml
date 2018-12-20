@@ -7,8 +7,8 @@ description: Um resumo das minhas aventuras, projetos, experiências, hobbies e 
 # User settings
 username: João Sconetto
 user_title: Engenheiro de Software
-user_description: Engenheiro de software em formação, desenvolvedor ávido, candidato a gerente de projetos/configuração/suporte, amante do DevOps e entusiasta do Software Livre. Piloto competitivo virtual nas horas livres, apreciador de cervejas artesanais e importadas, fã aventureiro da culinária e aficionado pela cultura japonesa. Troco baladas por um bom bowl de lámen ou uma barca de sushi fresco!
-user_description_hobbies: Gosto de aprender sobre novas tecnologias, atualmente estou em lua de mel com ar/vr aplicados com <i>point clouds</i>, <i>ethical hacking</i>, Python <i>machine learning</i> e React Native. Adoro tirar fotografias e tento (falhando muito) ser eu mesmo um fotográfo.
+user_description: Engenheiro de software em formação, desenvolvedor ávido, candidato a gerente de projetos/configuração/suporte, amante do DevOps e entusiasta do Software Livre. Piloto competitivo virtual nas horas livres, apreciador de cervejas artesanais e importadas, fã aventureiro da culinária e aficionado pela cultura japonesa. Adoro tirar fotografias e tento (falhando muito) ser eu mesmo um fotográfo. Troco baladas por um bom bowl de lámen ou uma barca de sushi fresco!
+user_description_hobbies: Gosto de aprender sobre novas tecnologias, atualmente estou evoluindo alguns conhecimentos em <i>ethical hacking</i>, Python <i>Machine Learning</i>, React Native, DevSecOps e Arquitetura <i>FaaS</i> e <i>Serverless</i>.
 email: sconetto.joao@gmail.com
 twitter_username: sconetto
 github_username: sconetto
