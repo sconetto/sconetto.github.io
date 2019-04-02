@@ -47,7 +47,7 @@ gulp.task('sass', function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(csso())
-	.pipe(gulp.dest('assets/css/'))
+		.pipe(gulp.dest('assets/css/'))
 });
 
 /*
