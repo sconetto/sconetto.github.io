@@ -1,24 +1,50 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>
+    {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+  <meta
+    name="description"
+    content="{% if page.description %}{{
+      page.description | strip_html | strip_newlines | truncate: 160
+    }}{% else %}{{ site.description }}{% endif %}"
+  />
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon/favicon-16x16.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ "/assets/img/favicon/android-chrome-192x192.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="512x512" href="{{ "/assets/img/favicon/android-chrome-512x512.png" | prepend: site.baseurl }}">
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-  <link rel="xml" href="/browserconfig.xml">
-  <link rel="mask-icon" href="{{ "/assets/img/favicon/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#5bbad5">
-  <link href="{{ "/keybase.txt" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{
+    "/assets/css/main.css" | prepend: site.baseurl
+  }}">
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{
+    "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl
+  }}"> <link rel="icon" type="image/png" sizes="32x32" href="{{
+    "/assets/img/favicon/favicon-32x32.png" | prepend: site.baseurl
+  }}"> <link rel="icon" type="image/png" sizes="16x16" href="{{
+    "/assets/img/favicon/favicon-16x16.png" | prepend: site.baseurl
+  }}"> <link rel="icon" type="image/png" sizes="192x192" href="{{
+    "/assets/img/favicon/android-chrome-192x192.png" | prepend: site.baseurl
+  }}"> <link rel="icon" type="image/png" sizes="512x512" href="{{
+    "/assets/img/favicon/android-chrome-512x512.png" | prepend: site.baseurl
+  }}">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <link rel="xml" href="/browserconfig.xml" />
+  <link rel="mask-icon" href="{{
+    "/assets/img/favicon/safari-pinned-tab.svg" | prepend: site.baseurl
+  }}" color="#5bbad5"> <link href="{{
+    "/keybase.txt" | prepend: site.baseurl
+  }}">
 
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="theme-color" content="#ffffff" />
 </head>
