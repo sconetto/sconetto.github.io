@@ -1,8 +1,8 @@
 # Site settings
 title: João Pedro Sconetto
 description: Um resumo das minhas aventuras, projetos, experiências, hobbies e algo mais.
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "sconetto.me" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: João Sconetto
