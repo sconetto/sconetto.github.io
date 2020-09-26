@@ -4,22 +4,23 @@
   "description": "An personal site with some info and some stories",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "João Pedro Sconetto",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.26.0",
+    "browser-sync": "^2.26.12",
     "gulp-concat": "^2.6.1",
-    "gulp-csso": "^2.0.0",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^4.0.0",
-    "gulp-uglify": "^2.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "tunnel-agent": "^0.6.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.2"
   }
 }
