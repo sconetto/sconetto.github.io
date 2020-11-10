@@ -1,0 +1,25 @@
+{
+  "name": "sconetto.me",
+  "version": "0.1.0",
+  "description": "sconetto's personal website",
+  "main": "js/cli.js",
+  "scripts": {
+    "dev": "http-server -o",
+    "format": "prettier --write 'src/*.js'",
+    "lint": "prettier --check 'src/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sconetto/sconetto.github.io.git"
+  },
+  "author": "João Pedro Sconetto <sconetto.joao@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sconetto/sconetto.github.io/issues"
+  },
+  "homepage": "https://github.com/sconetto/sconetto.github.io#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "prettier": "^2.1.2"
+  }
+}
