@@ -71,6 +71,12 @@ class Shell {
 
       if (evt.keyCode === 9) {
         evt.preventDefault();
+        let baseCommand = evt.path[0].innerText
+        Object.keys(this.commands).forEach(function (element) {
+          if (element.startsWith(baseCommand)) {
+            evt.path[0].innerText = element
+          }
+        })
       } else if (evt.keyCode === 27) {
         $('.terminal-window').toggleClass('fullscreen');
       } else if (evt.keyCode === 8 || evt.keyCode === 46) {
