@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/sconetto/sconetto.github.io#readme",
   "devDependencies": {
-    "http-server": "^0.12.3",
+    "http-server": "^14.1.1",
     "prettier": "^2.1.2"
   }
 }
