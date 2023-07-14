@@ -82,7 +82,7 @@ class Shell {
           // (baseCommand.indexOf("&nbsp;") >= 0 || baseCommand.indexOf(" ") >= 0)
           Object.keys(this.commands).every(function (element) {
             if (element.startsWith(baseCommand)) {
-              evt.target.innerHTML = element + "&nbsp;";
+              evt.target.innerHTML = element + '&nbsp;';
               selection.removeAllRanges();
               range.selectNodeContents(evt.srcElement);
               range.collapse(false);
@@ -95,15 +95,15 @@ class Shell {
           });
         }
       } else if (evt.keyCode === 27 && evt.ctrlKey && evt.shiftKey && this.easter_count < 3) {
-        this.term.innerHTML += "<p>what are you trying to do? ;P</p>";
+        this.term.innerHTML += '<p>what are you trying to do? ;P</p>';
         this.easter_count += 1;
         const prompt = evt.target;
         this.resetPrompt(term, prompt);
-      } else if (evt.keyCode === 27 && (!evt.ctrlKey && !evt.shiftKey)) {
+      } else if (evt.keyCode === 27 && !evt.ctrlKey && !evt.shiftKey) {
         $('.terminal-window').toggleClass('fullscreen');
       } else if (evt.keyCode === 8 || evt.keyCode === 46) {
         this.resetHistoryIndex();
-      } else if  (evt.keyCode === 67 && evt.ctrlKey) {
+      } else if (evt.keyCode === 67 && evt.ctrlKey) {
         const prompt = evt.target;
         this.resetPrompt(term, prompt);
       }
