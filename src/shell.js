@@ -6,7 +6,7 @@ class Shell {
     this.setupListeners(term);
     this.term = term;
 
-    localStorage.directory = 'root';
+    localStorage.directory = 'sconetto';
     localStorage.history = JSON.stringify('');
     localStorage.historyIndex = -1;
     localStorage.inHistory = false;

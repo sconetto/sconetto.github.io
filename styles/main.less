@@ -1,13 +1,13 @@
 @font-family: "Fira Code", Menlo, Monaco, "Consolas", "Courier New", "Courier";
 
 body {
-  background-color: #211E3A;
+  background-color: #6272a4;
 }
 
 .terminal-window {
   text-align: left;
-  width: 600px;
-  height: 360px;
+  width: 768px;
+  height: 512px;
   border-radius: 10px;
   margin: auto;
   position: relative;
@@ -124,21 +124,26 @@ body {
   }
 
   .input {
-    outline-color:  #30353a;
+    outline-color:  #282a36;
     border:         none;
     display:        inline-block;
   }
 
   .root {
-    color: #95F584;
+    color: #50fa7b;
+    font-family: @font-family;
+    font-weight: bold;
   }
 
   .tick {
-    color: #EC4891;
+    color: #ff5555;
   }
 
   .blue {
     color: deepskyblue;
+  }
+  .blue:hover {
+    color: royalblue;
   }
 
   .gray {
@@ -146,11 +151,11 @@ body {
   }
 
   .dir {
-    color: #88DEF2;
+    color: #bd93f9;
   }
 
   .green {
-    color: green;
+    color: #50fa7b;
   }
 }
 

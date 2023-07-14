@@ -9,13 +9,13 @@ const errors = {
 };
 
 const struct = {
-  root: ['about', 'resume', 'contact', 'talks'],
+  sconetto: ['about', 'resume', 'contact'],
   skills: ['proficient', 'familiar', 'learning'],
 };
 
 const commands = {};
 let systemData = {};
-const rootPath = 'users/sconetto/root';
+const rootPath = '/home/sconetto';
 
 const getDirectory = () => localStorage.directory;
 const setDirectory = (dir) => {
@@ -46,7 +46,20 @@ commands.rm = () => errors.noWriteAccess;
 // View contents of specified directory.
 commands.ls = (directory) => {
   if (directory === '..' || directory === '~') {
-    return systemData['root'];
+    return systemData['sconetto'];
+  }
+
+  if (directory in struct) {
+    return systemData[directory];
+  }
+
+  return systemData[getDirectory()];
+};
+
+// View contents of specified directory. (copy of ls)
+commands.l = (directory) => {
+  if (directory === '..' || directory === '~') {
+    return systemData['sconetto'];
   }
 
   if (directory in struct) {
@@ -62,7 +75,13 @@ commands.help = () => systemData.help;
 // Display current path.
 commands.path = () => {
   const dir = getDirectory();
-  return dir === 'root' ? rootPath : `${rootPath}/${dir}`;
+  return dir === 'sconetto' ? rootPath : `${rootPath}/${dir}`;
+};
+
+// Display current path. (copy of path)
+commands.pwd = () => {
+  const dir = getDirectory();
+  return dir === 'sconetto' ? rootPath : `${rootPath}/${dir}`;
 };
 
 // See command history.
@@ -81,7 +100,7 @@ commands.cd = (newDirectory) => {
   if (dirs.includes(newDir) && currDir !== newDir) {
     setDirectory(newDir);
   } else if (newDir === '' || newDir === '~' || (newDir === '..' && dirs.includes(currDir))) {
-    setDirectory('root');
+    setDirectory('sconetto');
   } else {
     return errors.invalidDirectory;
   }
@@ -113,7 +132,7 @@ commands.cat = (filename) => {
       const directories = filename.split('/');
       const directory = directories.slice(0, 1).join(',');
       const fileKey = directories.slice(1, directories.length).join(',').split('.')[0];
-      if (directory === 'root' || !struct.hasOwnProperty(directory))
+      if (directory === 'sconetto' || !struct.hasOwnProperty(directory))
         return errors.noSuchFileOrDirectory;
 
       return isFileInSubdirectory(fileKey, directory)
@@ -144,7 +163,6 @@ $(() => {
   pages.push($.get('pages/resume.html'));
   pages.push($.get('pages/root.html'));
   pages.push($.get('pages/skills.html'));
-  pages.push($.get('pages/talks.html'));
   $.when
     .apply($, pages)
     .done(
@@ -156,9 +174,8 @@ $(() => {
         learningData,
         proficientData,
         resumeData,
-        rootData,
+        sconettoData,
         skillsData,
-        talksData,
       ) => {
         systemData['about'] = aboutData[0];
         systemData['contact'] = contactData[0];
@@ -167,9 +184,8 @@ $(() => {
         systemData['learning'] = learningData[0];
         systemData['proficient'] = proficientData[0];
         systemData['resume'] = resumeData[0];
-        systemData['root'] = rootData[0];
+        systemData['sconetto'] = sconettoData[0];
         systemData['skills'] = skillsData[0];
-        systemData['talks'] = talksData[0];
       },
     );
 

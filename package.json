@@ -1,6 +1,6 @@
 {
   "name": "sconetto.me",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "sconetto's personal website",
   "main": "js/cli.js",
   "scripts": {
