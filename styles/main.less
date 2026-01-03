@@ -57,17 +57,17 @@ body {
       background: #ff605c;
     }
 
-    div > i {
+    div>i {
       text-align: center;
       position: relative;
     }
   }
 
   #terminal {
-    color: white;
+    color: #f8f8f2;
     font-family: @font-family;
     font-size: 11pt;
-    background: #30353a;
+    background: #282a36;
     padding: 10px;
     box-sizing: border-box;
     position: absolute;
@@ -83,11 +83,12 @@ body {
 
   #link-about {
     display: inline;
-    color: deepskyblue;
+    color: #8be9fd;
     text-decoration: none;
   }
+
   #link-about:hover {
-    color: royalblue;
+    color: #17d3fb;
     text-decoration: none;
   }
 
@@ -107,24 +108,37 @@ body {
   }
 
   .input {
-    outline-color:  #282a36;
-    border:         none;
-    display:        inline-block;
+    outline-color: #282a36;
+    border: none;
+    display: inline-block;
   }
 
   .root {
-    color: #50fa7b;
+    color: #8be9fd;
+    font-family: @font-family;
+    font-weight: bold;
+  }
+
+  .user {
+    color: #ff5555;
+    font-family: @font-family;
+    font-weight: bold;
+  }
+
+  .host {
+    color: #ff79c6;
     font-family: @font-family;
     font-weight: bold;
   }
 
   .tick {
-    color: #ff5555;
+    color: #50fa7b;
   }
 
   .blue {
     color: deepskyblue;
   }
+
   .blue:hover {
     color: royalblue;
   }
@@ -139,6 +153,14 @@ body {
 
   .green {
     color: #50fa7b;
+  }
+
+  .links {
+    color: #8be9fd;
+  }
+
+  .links:hover {
+    color: #17d3fb;
   }
 }
 
@@ -169,7 +191,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
   .terminal-window {
     width: 95%;
     height: 60vh;
