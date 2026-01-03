@@ -1,6 +1,6 @@
 {
   "name": "sconetto.me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sconetto's personal website",
   "main": "js/cli.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/sconetto/sconetto.github.io.git"
   },
-  "author": "João Pedro Sconetto <sconetto.joao@gmail.com>",
+  "author": "João Pedro Sconetto <work@sconetto.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sconetto/sconetto.github.io/issues"
