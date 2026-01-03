@@ -6,6 +6,7 @@ const errors = {
   fileNotFound: 'Error: file not found in current directory',
   fileNotSpecified: 'Error: you did not specify a file',
   invalidFile: 'Error: not a valid file',
+  noPermission: "You don't have permission to make this operation",
 };
 
 const struct = {
@@ -16,6 +17,18 @@ const struct = {
 const commands = {};
 let systemData = {};
 const rootPath = '/home/sconetto';
+const pageNames = [
+  'about.txt',
+  'contact.txt',
+  'familiar.txt',
+  'learning.txt',
+  'proficient.txt',
+  'resume.txt',
+  'skills',
+  'skills/proficient.txt',
+  'skills/familiar.txt',
+  'skills/learning.txt',
+];
 
 const getDirectory = () => localStorage.directory;
 const setDirectory = (dir) => {
@@ -37,11 +50,20 @@ const registerMinimizedToggle = () => {
 // Create new directory in current directory.
 commands.mkdir = () => errors.noWriteAccess;
 
+// Remove directory in the current directory.
+commands.rmdir = () => errors.noPermission;
+
 // Create new directory in current directory.
 commands.touch = () => errors.noWriteAccess;
 
 // Remove file from current directory.
 commands.rm = () => errors.noWriteAccess;
+
+// Copy files from shell.
+commands.cp = () => errors.noPermission;
+
+// Move files from shell.
+commands.mv = () => errors.noPermission;
 
 // View contents of specified directory.
 commands.ls = (directory) => {
@@ -55,6 +77,12 @@ commands.ls = (directory) => {
 
   return systemData[getDirectory()];
 };
+
+// Display current user.
+commands.whoami = () => 'admin';
+
+// Display hostname.
+commands.hostname = () => 'shell';
 
 // View contents of specified directory. (copy of ls)
 commands.l = (directory) => {
@@ -189,5 +217,5 @@ $(() => {
       },
     );
 
-  const terminal = new Shell(cmd, commands);
+  const terminal = new Shell(cmd, commands, pageNames);
 });
